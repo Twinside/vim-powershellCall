@@ -1,43 +1,11 @@
 " File Description {{{
 " =============================================================================
 " File:             powerShellCall.vim
+" Version:          1.1
 " Description:      Vim script permitting the use of powershell as a 'shell'
-" Maintener:        Vincent Berthoux <vincent.berthoux@gmail.com>
-" Usage:            <range>Phs
-"                       to execute command in range and paste-back result
-"
-"                   <visual>Phsv
-"                       execute the visual selection and paste the result.
-"
-"                   §§ (visual or normal mode)
-"                       Prepare a command line to execute visual selection
-"                       cursor line with powershell
-"
+" Maintener:        Vincent B <twinside@gmail.com>
 " Setup:            Drop the file in your ~/.vim/plugin or vimfiles/plugin
 "                   folder
-"
-" Configuration:
-"       - let g:powershellLoadProfile = 1
-"           If you want the powershell to load your profile when evaluating
-"           your snippets from vim. Default is 0 (no profile loaded).
-"
-"       - let g:powershellFileEncoding = 'ascii'
-"           Let you specify the encoding used by the powershell as output.
-"           The default value is ASCII.
-"           You can use the following values :
-"               - ASCII
-"               - Unicode (UTF-16)
-"               - UTF7
-"               - UTF8
-"               - UTF32
-"               - BigEndianUnicode
-"               - Default
-"               - OEM
-"
-"       - let g:powershellInputTempfilename = 'blablain'
-"           If you want to change the name of the script temp file name.
-"       - let g:powershellInputTempfilename = 'blablaout'
-"           If you want to change the name of the output temp file.
 " =============================================================================
 " }}}
 if exists("g:__POWERSHELLCALL_VIM__")
